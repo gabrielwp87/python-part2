@@ -5,6 +5,15 @@ class Conta:
         self.__titular = titular
         self.__saldo = saldo
         self.__limite = limite
+        
+    PI = 3.14 #esse é um exemplo de um atributo que funciona como se fosse um  método estático,
+              #para o caso de esse método apenas retorna um valor, essa é uma aplicação útil.
+              #esse atributo substituiu o seguinte método:
+              # @staticmethod
+              #  def obter_pi():
+              #      return 3.14
+              #para utilizar esse atributo basta: >>> from conta import Conta    >>> Conta.PI
+            
 #self é a referência do endereçamento da memória na qual foi alocada a classe.
 #__init__ é a função construtura.
 
